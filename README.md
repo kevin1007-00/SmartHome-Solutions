@@ -41,5 +41,5 @@ Para visualizar el proyecto:
 - Integración con backend
 - Sistema de autenticación de usuarios
 
-## 👨‍💻 Autor
-Kevin Andres
+## Autor
+Kevin Andres Cuzco Ochoa
