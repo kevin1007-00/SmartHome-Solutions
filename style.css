@@ -1,50 +1,133 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Header */
 header {
-    background-color: #0a2540;
+    background: #0a2540;
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
 }
 
+/* Navegación */
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Contenedor principal */
 main {
     padding: 20px;
 }
 
+/* Secciones */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Tarjetas (SERVICIOS) */
+.servicios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 250px;
     background: white;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
+.card i {
+    font-size: 40px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Imágenes */
 img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Footer */
 footer {
-    background-color: #0a2540;
+    background: #0a2540;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
+
+/* 📱 RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+}
+
+/* Móvil */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
